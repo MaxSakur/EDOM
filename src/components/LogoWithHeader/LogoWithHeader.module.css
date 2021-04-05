@@ -1,0 +1,9 @@
+.logo{
+    width: 100%;
+    max-width: 100px;
+}
+
+.logo_container{ 
+    display: flex;
+    margin-bottom: 16px;
+}

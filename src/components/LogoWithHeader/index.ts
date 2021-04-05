@@ -1,3 +1,3 @@
-import { ControlHeader } from "./ControlHeader";
+import { LogoWithHeader } from "./LogoWithHeader";
 
-export default ControlHeader;
+export default LogoWithHeader;

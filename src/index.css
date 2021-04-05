@@ -21,7 +21,8 @@ code {
   /* COLORS */
   --accent: #029c7d;
   --main: #11101D;
-  --light_grey: #EAECF0;
+  --light: #fff;
+  --light_grey: #dddada47;
 
   /* SIZES */
   --navigation_width: 240px
