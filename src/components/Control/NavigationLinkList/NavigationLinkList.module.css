@@ -3,8 +3,5 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
-}
-.nav_link_text{
-    color: #fff
+    height: 100%;   
 }

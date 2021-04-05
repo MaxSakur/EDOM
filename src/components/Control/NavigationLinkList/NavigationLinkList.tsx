@@ -1,6 +1,6 @@
 import s from "./NavigationLinkList.module.css";
 import { FaBeer } from "react-icons/fa";
-import CustomNavLink from "./../CustomNavLink";
+import CustomNavLink from "../../CustomNavLink";
 
 export const NavigationLinkList = () => {
   return (

@@ -11,10 +11,8 @@ interface NavLinkProps {
 export const CustomNavLink: FC<NavLinkProps> = ({ link, icon, text }) => {
   return (
     <Link className={s.nav_link} to={`/${link}`}>
-      <p className={s.nav_link_text}>
-        {icon}
-        {text}
-      </p>
+      {icon}
+      <p className={s.nav_link_text}>{text}</p>
     </Link>
   );
 };

@@ -8,7 +8,7 @@ interface DraggableNavigationProps {
 export const DraggableNavigation = (props: DraggableNavigationProps) => {
   let [activeDrags, setActiveDrags] = React.useState(0);
   const [horizonalMaxPoint, setHorizonalMaxPoint] = React.useState(0);
-  const OPEN_MENU_WIDTH = 340;
+  const OPEN_MENU_WIDTH = -240;
   const nodeRef = React.useRef(null);
   const onStart = () => setActiveDrags(++activeDrags);
   const onStop = () => setActiveDrags(--activeDrags);
@@ -23,13 +23,18 @@ export const DraggableNavigation = (props: DraggableNavigationProps) => {
       {...dragHandlers}
       onStop={(_, data) => {
         if (data.x < horizonalMaxPoint) {
-          return setHorizonalMaxPoint(-OPEN_MENU_WIDTH * 0.65);
+          return setHorizonalMaxPoint(OPEN_MENU_WIDTH);
         }
 
         return setHorizonalMaxPoint(0);
       }}
     >
       <div className="box cursor-x" ref={nodeRef}>
+        <div
+          className={`box_nav_icon ${
+            horizonalMaxPoint === 0 ? "" : "box_nav_icon_active"
+          }`}
+        />
         {props.children}
       </div>
     </Draggable>
