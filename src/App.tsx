@@ -1,8 +1,8 @@
 import React from "react";
-import Draggable from "react-draggable";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.css";
-import ControlSection from "./components/ControlSection";
+import ControlSection from "./components/Control/ControlSection";
+import DraggableNavigation from "./components/DraggableNavigation";
 
 const Test = () => {
   return (
@@ -20,41 +20,13 @@ const Home = () => {
 };
 
 function App() {
-  let [activeDrags, setActiveDrags] = React.useState(0);
-  let [horizonalMaxPoint, setHorizonalMaxPoint] = React.useState(0);
-  const nodeRef = React.useRef(null);
-  const onStart = () => setActiveDrags(++activeDrags);
-  const onStop = () => setActiveDrags(--activeDrags);
-  const dragHandlers = { onStart, onStop };
   return (
     <Router>
-      <div className="App">
-        <div className="controls">
-          <Draggable
-            nodeRef={nodeRef}
-            defaultPosition={{ x: horizonalMaxPoint, y: 0 }}
-            axis="x"
-            positionOffset={{ x: 0, y: 20 }}
-            bounds="20"
-            // position={{ x: horizonalMaxPoint, y: 0 }}
-            {...dragHandlers}
-            onStop={(e, data) => {
-              if (data.x < 0) {
-                setHorizonalMaxPoint(0);
-              }
-
-              if (data.x > 50) {
-                console.log("DONE", data.x, horizonalMaxPoint);
-                setHorizonalMaxPoint(50);
-              }
-              console.log("-----", data.x, horizonalMaxPoint);
-              setHorizonalMaxPoint(0);
-            }}
-          >
-            <div className="box cursor-x" ref={nodeRef}>
-              <ControlSection />
-            </div>
-          </Draggable>
+      <div className="app">
+        <div className="control">
+          <DraggableNavigation>
+            <ControlSection />
+          </DraggableNavigation>
         </div>
 
         <div className="window">
