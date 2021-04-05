@@ -17,5 +17,11 @@ code {
 }
 
 :root {
+
+  /* COLORS */
   --accent: #029c7d;
+
+  /* SIZES */
+  --navigation_width: 240px
+
 }

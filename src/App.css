@@ -1,20 +1,19 @@
 .app {
   text-align: center;
   display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
   height: 100vh;
   width: 100vw;
   overflow: hidden;
 }
 
-.window {
-  width: 100vw;
-  border: 20px solid red;
-}
 
 .control {
   height: 100%;
   width: 200px;
   position: fixed;
+  left: 0;
   z-index: 1;
 }
 
@@ -31,10 +30,8 @@
   box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
   position: relative;
   cursor: pointer;
-  z-index: 1;
-  
+  z-index: 1; 
 }
-
 
 .box_nav_icon {
     position: absolute;
@@ -61,4 +58,18 @@
 
 .box_nav_icon_active:hover {
   box-shadow: 4px 4px 8px 4px rgba(34, 60, 80, 0.2);
+}
+
+
+.window {
+  width: calc(100vw - var(--navigation_width));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid red;
+}
+
+.window_fullWidth {
+  width: 100vw
 }

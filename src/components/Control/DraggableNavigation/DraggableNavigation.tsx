@@ -3,6 +3,7 @@ import Draggable from "react-draggable";
 
 interface DraggableNavigationProps {
   children: React.ReactNode;
+  onDragChange: (value: boolean) => any;
 }
 
 export const DraggableNavigation = (props: DraggableNavigationProps) => {
@@ -13,6 +14,16 @@ export const DraggableNavigation = (props: DraggableNavigationProps) => {
   const onStart = () => setActiveDrags(++activeDrags);
   const onStop = () => setActiveDrags(--activeDrags);
   const dragHandlers = { onStart, onStop };
+  const { onDragChange } = props;
+
+  const handleCloseDraggable = () => {
+    onDragChange(true);
+    return setHorizonalMaxPoint(OPEN_MENU_WIDTH);
+  };
+  const handleOpenDraggable = () => {
+    onDragChange(false);
+    return setHorizonalMaxPoint(0);
+  };
 
   return (
     <Draggable
@@ -23,10 +34,10 @@ export const DraggableNavigation = (props: DraggableNavigationProps) => {
       {...dragHandlers}
       onStop={(_, data) => {
         if (data.x < horizonalMaxPoint) {
-          return setHorizonalMaxPoint(OPEN_MENU_WIDTH);
+          handleCloseDraggable();
+        } else {
+          handleOpenDraggable();
         }
-
-        return setHorizonalMaxPoint(0);
       }}
     >
       <div className="box cursor-x" ref={nodeRef}>
