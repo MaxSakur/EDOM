@@ -1,13 +1,24 @@
-import React from "react";
+import React, { FC } from "react";
 import Loader from "../Loader";
 
 interface ScreenPreLoader {
   children: React.ReactNode;
 }
 
-export const ScreenPreLoader = (props: ScreenPreLoader) => {
-  const [loading, setLoading] = React.useState(true);
-  setInterval(() => setLoading(false), 2000);
+// eslint-disable-next-line
+export const ScreenPreLoader: FC<ScreenPreLoader> = ({ children }) => {
+  const [currentCount, setCount] = React.useState(2);
+  const timer = () => setCount(currentCount - 1);
 
-  return <>{loading ? <Loader /> : props.children}</>;
+  React.useEffect(() => {
+    if (currentCount <= 0) {
+      return;
+    }
+
+    const id = setInterval(timer, 1000);
+    return () => clearInterval(id);
+    // eslint-disable-next-line
+  }, [currentCount]);
+
+  return <>{currentCount !== 0 ? <Loader /> : children}</>;
 };

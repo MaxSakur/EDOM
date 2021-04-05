@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import s from "./CustomNavLink.module.css";
 
 interface NavLinkProps {
@@ -10,9 +10,15 @@ interface NavLinkProps {
 
 export const CustomNavLink: FC<NavLinkProps> = ({ link, icon, text }) => {
   return (
-    <Link className={s.nav_link} to={`/${link}`}>
-      {icon}
-      <p className={s.nav_link_text}>{text}</p>
-    </Link>
+    <NavLink
+      activeClassName={s.is_active}
+      className={s.nav_link}
+      to={`/${link}`}
+    >
+      <>
+        <span className={s.icon}>{icon}</span>
+        <p className={s.nav_link_text}>{text}</p>
+      </>
+    </NavLink>
   );
 };

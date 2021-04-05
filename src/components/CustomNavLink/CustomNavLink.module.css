@@ -1,17 +1,29 @@
 
-
-.nav_link_text{
-    width: 100%;
-    color: #fff;
-}
 .nav_link{
     display: flex;
     width: 100%;
     text-decoration: none;
     border:2px solid #fff;
     text-align: left;
-    padding: 20px 8px;
+    padding: 12px 4px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+
 }
+
+.nav_link.is_active {
+    border:2px solid red;
+}
+.nav_link_text{
+    color: var(--light_grey);
+    padding: 0 12px;
+}
+
 .nav_link:hover {
     border:2px solid var(--accent);
+}
+
+.icon {
+    padding-left: 12px;
+    color: var(--light_grey);
 }
