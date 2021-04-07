@@ -50,7 +50,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* box-shadow: 0 0  2px 2px rgba(34, 60, 80, 0.2); */
     transform: rotate(180deg);
     z-index: -1;
     transition: all .5s ease-in-out;
@@ -84,6 +83,7 @@
 
 .window {
   width: calc(100vw - var(--navigation_width));
+  transition: all 1s ease;
   display: flex;
   flex-direction: column;
   justify-content: center;

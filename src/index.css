@@ -1,10 +1,15 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'Rubik', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: local('Rubik'), url('./fonts/Rubik/static/Rubik-Light.ttf') format('truetype');
 }
 
 code {
@@ -22,7 +27,7 @@ code {
   --accent: #029c7d;
   --main: #11101D;
   --light: #fff;
-  --light_grey: #dddada47;
+  --light_grey: #dddada85;
 
   /* SIZES */
   --navigation_width: 240px

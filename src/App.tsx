@@ -11,7 +11,6 @@ import LogoWithHeader from "./components/LogoWithHeader";
 
 const DONE_PROJECTS = [
   {
-    exact: true,
     text: "ТаунХаус",
     link: "home",
     path: "/home",
@@ -32,7 +31,6 @@ const DONE_PROJECTS = [
 ];
 const CURRENT_PROJECTS = [
   {
-    exact: true,
     text: "ТаунХаус",
     link: "home4",
     path: "/home4",
@@ -54,9 +52,10 @@ const CURRENT_PROJECTS = [
 
 const COMPANY = [
   {
+    exact: true,
     text: "О компании",
-    link: "home7",
-    path: "/home7",
+    link: "EDOM",
+    path: "/EDOM",
     screen: <HomeScreen />,
   },
   {
@@ -75,7 +74,7 @@ const COMPANY = [
 
 function App() {
   const [menuIsOpen, setMenuIsOpen] = React.useState(false);
-  const concatData = [...COMPANY, ...DONE_PROJECTS];
+  const concatData = [...COMPANY, ...CURRENT_PROJECTS, ...DONE_PROJECTS];
 
   return (
     <Router>

@@ -1,0 +1,54 @@
+
+.screen {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    padding: 40px 80px;
+    background-color: rgba(0,0,0, .6);
+    width: 100%;
+}
+
+.content {
+    background-color: rgba(265,265,265, .5);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 40px;
+    box-shadow: 2px 2px 4px 0 rgba(265, 265, 265, 0.2);
+}
+
+.mainBlock {
+    display: flex;
+}
+.logoContainer{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    border-right: 2px solid #fff;
+    padding: 0 20px;
+}
+.textContainer {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.slogan {
+    text-align: left;
+    font-family: 'Rubik';
+    font-size: 40px;
+    
+}
+
+.bgVideo{
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    width: 100%;   
+}
