@@ -1,24 +1,30 @@
 {
   "files": {
-    "main.css": "/EDOM/static/css/main.29fd6062.chunk.css",
-    "main.js": "/EDOM/static/js/main.f0b233bb.chunk.js",
-    "main.js.map": "/EDOM/static/js/main.f0b233bb.chunk.js.map",
-    "runtime-main.js": "/EDOM/static/js/runtime-main.ca93de62.js",
-    "runtime-main.js.map": "/EDOM/static/js/runtime-main.ca93de62.js.map",
-    "static/js/2.dc48651a.chunk.js": "/EDOM/static/js/2.dc48651a.chunk.js",
-    "static/js/2.dc48651a.chunk.js.map": "/EDOM/static/js/2.dc48651a.chunk.js.map",
-    "static/js/3.de4da343.chunk.js": "/EDOM/static/js/3.de4da343.chunk.js",
-    "static/js/3.de4da343.chunk.js.map": "/EDOM/static/js/3.de4da343.chunk.js.map",
+    "main.css": "/EDOM/static/css/main.bb2f621f.chunk.css",
+    "main.js": "/EDOM/static/js/main.09a9236d.chunk.js",
+    "main.js.map": "/EDOM/static/js/main.09a9236d.chunk.js.map",
+    "runtime-main.js": "/EDOM/static/js/runtime-main.c0395fc2.js",
+    "runtime-main.js.map": "/EDOM/static/js/runtime-main.c0395fc2.js.map",
+    "static/css/2.27175f2b.chunk.css": "/EDOM/static/css/2.27175f2b.chunk.css",
+    "static/js/2.a2c86bfa.chunk.js": "/EDOM/static/js/2.a2c86bfa.chunk.js",
+    "static/js/2.a2c86bfa.chunk.js.map": "/EDOM/static/js/2.a2c86bfa.chunk.js.map",
+    "static/js/3.30554e47.chunk.js": "/EDOM/static/js/3.30554e47.chunk.js",
+    "static/js/3.30554e47.chunk.js.map": "/EDOM/static/js/3.30554e47.chunk.js.map",
     "index.html": "/EDOM/index.html",
-    "static/css/main.29fd6062.chunk.css.map": "/EDOM/static/css/main.29fd6062.chunk.css.map",
-    "static/js/2.dc48651a.chunk.js.LICENSE.txt": "/EDOM/static/js/2.dc48651a.chunk.js.LICENSE.txt",
+    "static/css/2.27175f2b.chunk.css.map": "/EDOM/static/css/2.27175f2b.chunk.css.map",
+    "static/css/main.bb2f621f.chunk.css.map": "/EDOM/static/css/main.bb2f621f.chunk.css.map",
+    "static/js/2.a2c86bfa.chunk.js.LICENSE.txt": "/EDOM/static/js/2.a2c86bfa.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/EDOM/static/media/Rubik-Light.d950a011.ttf",
+    "static/media/bgVideo.688cc3a8.mp4": "/EDOM/static/media/bgVideo.688cc3a8.mp4",
     "static/media/App.css": "/EDOM/static/media/drag.ea2b76a0.svg",
+    "static/media/edom_townhouse.e687870e.jpeg": "/EDOM/static/media/edom_townhouse.e687870e.jpeg",
     "static/media/logo-new.00e5acdc.png": "/EDOM/static/media/logo-new.00e5acdc.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.ca93de62.js",
-    "static/js/2.dc48651a.chunk.js",
-    "static/css/main.29fd6062.chunk.css",
-    "static/js/main.f0b233bb.chunk.js"
+    "static/js/runtime-main.c0395fc2.js",
+    "static/css/2.27175f2b.chunk.css",
+    "static/js/2.a2c86bfa.chunk.js",
+    "static/css/main.bb2f621f.chunk.css",
+    "static/js/main.09a9236d.chunk.js"
   ]
 }
