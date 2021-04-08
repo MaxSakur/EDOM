@@ -14,7 +14,7 @@ const DONE_PROJECTS = [
     text: "ТаунХаус",
     link: "home",
     path: "/home",
-    screen: <HomeScreen />,
+    screen: <SplitHouseScreen />,
   },
   {
     text: "Бойница",
@@ -26,27 +26,27 @@ const DONE_PROJECTS = [
     text: "Усадьба",
     link: "home3",
     path: "/home3",
-    screen: <HomeScreen />,
+    screen: <SplitHouseScreen />,
   },
 ];
 const CURRENT_PROJECTS = [
   {
-    text: "ТаунХаус",
+    text: "Новый дом",
     link: "home4",
     path: "/home4",
-    screen: <HomeScreen />,
+    screen: <SplitHouseScreen />,
   },
   {
-    text: "Бойница",
+    text: "Новый дом 2",
     link: "home5",
     path: "/home5",
     screen: <SplitHouseScreen />,
   },
   {
-    text: "Усадьба",
+    text: "Новый дом 3",
     link: "home6",
     path: "/home6",
-    screen: <HomeScreen />,
+    screen: <SplitHouseScreen />,
   },
 ];
 
@@ -62,13 +62,13 @@ const COMPANY = [
     text: "Контакты",
     link: "home8",
     path: "/home8",
-    screen: <SplitHouseScreen />,
+    screen: <HomeScreen />,
   },
   {
     text: "Инвестиционные программы",
     link: "home9",
     path: "/home9",
-    screen: <SplitHouseScreen />,
+    screen: <HomeScreen />,
   },
 ];
 
@@ -96,7 +96,7 @@ function App() {
             ))}
 
             <div className="separator_line" />
-            <p className="separator_header">Настоящие проекты</p>
+            <p className="separator_header">Активные проекты</p>
             <div className="separator_line" />
             {CURRENT_PROJECTS.map((screen, index) => (
               <CustomNavLink
