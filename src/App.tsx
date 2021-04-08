@@ -17,13 +17,13 @@ const DONE_PROJECTS = [
     screen: <SplitHouseScreen />,
   },
   {
-    text: "Бойница",
+    text: "Каркасный Гигант",
     link: "home2",
     path: "/home2",
     screen: <SplitHouseScreen />,
   },
   {
-    text: "Усадьба",
+    text: "Крепость",
     link: "home3",
     path: "/home3",
     screen: <SplitHouseScreen />,

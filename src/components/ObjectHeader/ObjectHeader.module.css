@@ -67,7 +67,7 @@
     position: relative;
     color: #000;
     background: transparent;
-    border-radius: var(--border-width);
+    
     height: 100%;
   }
   .animetedGradient::after {
@@ -80,7 +80,7 @@
     height: 100%;
     background: linear-gradient(60deg, var(--main), var(--accent), var(--main), var(--accent));
     background-size: 300% 300%;
-    background-position: 0 50%;  border-radius: calc(2 * var(--border-width));
+    background-position: 0 50%;
     animation: moveGradient 10s alternate infinite;
   }
   
