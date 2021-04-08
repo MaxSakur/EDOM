@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/EDOM/static/css/main.bb2f621f.chunk.css",
-    "main.js": "/EDOM/static/js/main.09a9236d.chunk.js",
-    "main.js.map": "/EDOM/static/js/main.09a9236d.chunk.js.map",
+    "main.css": "/EDOM/static/css/main.0aff4493.chunk.css",
+    "main.js": "/EDOM/static/js/main.5a587eb2.chunk.js",
+    "main.js.map": "/EDOM/static/js/main.5a587eb2.chunk.js.map",
     "runtime-main.js": "/EDOM/static/js/runtime-main.c0395fc2.js",
     "runtime-main.js.map": "/EDOM/static/js/runtime-main.c0395fc2.js.map",
     "static/css/2.27175f2b.chunk.css": "/EDOM/static/css/2.27175f2b.chunk.css",
@@ -12,7 +12,7 @@
     "static/js/3.30554e47.chunk.js.map": "/EDOM/static/js/3.30554e47.chunk.js.map",
     "index.html": "/EDOM/index.html",
     "static/css/2.27175f2b.chunk.css.map": "/EDOM/static/css/2.27175f2b.chunk.css.map",
-    "static/css/main.bb2f621f.chunk.css.map": "/EDOM/static/css/main.bb2f621f.chunk.css.map",
+    "static/css/main.0aff4493.chunk.css.map": "/EDOM/static/css/main.0aff4493.chunk.css.map",
     "static/js/2.a2c86bfa.chunk.js.LICENSE.txt": "/EDOM/static/js/2.a2c86bfa.chunk.js.LICENSE.txt",
     "static/media/index.css": "/EDOM/static/media/Rubik-Light.d950a011.ttf",
     "static/media/bgVideo.688cc3a8.mp4": "/EDOM/static/media/bgVideo.688cc3a8.mp4",
@@ -24,7 +24,7 @@
     "static/js/runtime-main.c0395fc2.js",
     "static/css/2.27175f2b.chunk.css",
     "static/js/2.a2c86bfa.chunk.js",
-    "static/css/main.bb2f621f.chunk.css",
-    "static/js/main.09a9236d.chunk.js"
+    "static/css/main.0aff4493.chunk.css",
+    "static/js/main.5a587eb2.chunk.js"
   ]
 }
